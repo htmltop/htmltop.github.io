@@ -1,0 +1,186 @@
+@font-face{
+	font-family: GTA Ukrainian;
+	src:url("fonts/GTA Russian.ttf");
+}
+body{
+	margin: 0;
+}
+a{
+	text-decoration-line: none;
+}
+#header{
+	height: 100px;
+	position: sticky;
+	top: 0;
+	left: 0;
+	right: 0;
+	background-color: #222;
+	text-align: center;
+	font-family: GTA Ukrainian;
+	font-size: 100px;
+	z-index: 100;
+}
+#header .btn{
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	height: 30px;
+	font-size: 30px;
+	position: relative;
+	line-height: 30px;
+	text-transform: uppercase;
+	color: #ddd;
+	font-family: GTA Ukrainian;
+	transition-duration: 200ms;
+}
+#header .btn .arr{
+	position: relative;
+	width: 30px;
+	height: 30px;
+	margin: 20px;
+	display: inline-block;
+	vertical-align: top; 
+}
+#header .btn .arr::before{
+	content: "";
+	position: absolute;
+	display: block;
+	background-color: white;
+	width: 18px;
+	height: 5px;
+	top: calc(50% - 1px);
+	left: 0;
+	transform: rotate(-42deg);
+}
+#header .btn .arr::after{
+	content: "";
+	position: absolute;
+	display: block;
+	background-color: white;
+	width: 18px;
+	height: 5px;
+	top: calc(50% - 1px);
+	right: 0;
+	transform: rotate(42deg);
+}
+#header .btn:hover .arr::before{
+	content: "";
+	position: absolute;
+	display: block;
+	background-color: white;
+	width: 18px;
+	height: 5px;
+	top: calc(50% - 1px);
+	left: 0;
+	transform: rotate(42deg);
+}
+#header .btn:hover .arr::after{
+	content: "";
+	position: absolute;
+	display: block;
+	background-color: white;
+	width: 18px;
+	height: 5px;
+	top: calc(50% - 1px);
+	right: 0;
+	transform: rotate(-42deg);
+}
+#header .btn:hover{
+	padding-bottom: 50px;
+	color: #fff;
+	text-shadow: 0 0 7px #777;
+}
+#header .btn:after{
+	height: 10px;
+}
+#header .btn .menu{
+	position: absolute;
+	left: 0;
+	top: calc(100% + 5px);
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(0, 0, 0, 0.8);
+	transform: translateY(-50%) scaleY(0);
+	transition-duration: 200ms;
+	border-radius: 10px;
+}
+#header .btn:hover .menu{
+	transform: translateY(0) scaleY(1);
+}
+#header .btn:hover .menu .cover{
+	position: absolute;
+	bottom: 100%;
+	left: 0;
+	height: 5px;
+	width: 100%;
+}
+#header .btn .menu-btn{
+	font-size: 50px;
+	text-transform: none;
+	color: #aaa;
+}
+#header .btn .menu-btn:hover{
+	font-size: 52px;
+	color: #fff;
+}
+
+#header .logo{
+	padding: 0;
+	height: 50px;
+}
+#header .logo img{
+	height: 100%;
+}
+#header .btn1{
+
+}
+#header .btn2{
+
+}
+#header .btn{
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	height: 80px;
+	font-size: 80px;
+	line-height: 80px;
+	text-transform: uppercase;
+	color: #ddd;
+}
+#header .btn:hover{
+	color: #fff;
+	text-shadow: 0 0 7px #777;
+}
+#block1{
+	background-color: #888;
+}
+#block1 .video{
+	width: 100%;
+}
+.block{
+
+}
+.bgvideo{
+
+}
+#content{
+	min-height: 100vh;
+	background-color: #333;
+}
+#footer{
+	background-color: #111;
+	padding: 50px;
+	text-align: center;
+}
+#footer span{
+	color: white;
+	font-family: GTA Ukrainian;
+	font-size: 50px;
+}
+#footer span a{	
+	color: #888;
+	text-decoration-line: none;
+}
+#footer span a:hover{
+	text-decoration-line: underline;
+}
