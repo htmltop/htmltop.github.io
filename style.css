@@ -21,17 +21,22 @@ a{
 	z-index: 100;
 }
 #header .btn{
+	position: relative;
 	display: inline-block;
 	vertical-align: top;
 	padding: 10px;
 	height: 30px;
 	font-size: 30px;
-	position: relative;
 	line-height: 30px;
 	text-transform: uppercase;
 	color: #ddd;
 	font-family: GTA Ukrainian;
-	transition-duration: 200ms;
+	transition-property: color, background-color;
+	transition-duration: 2s;
+}
+#header .special-btn{
+	display: inline-block;
+	vertical-align: top;
 }
 #header .btn .arr{
 	position: relative;
@@ -115,6 +120,7 @@ a{
 	left: 0;
 	height: 5px;
 	width: 100%;
+	animation: pulsing 2s infinite;
 }
 #header .btn .menu-btn{
 	font-size: 50px;
@@ -124,11 +130,15 @@ a{
 #header .btn .menu-btn:hover{
 	font-size: 52px;
 	color: #fff;
+	animation: pulsing 2s infinite;
 }
 
 #header .logo{
 	padding: 0;
 	height: 50px;
+}
+#header .logo:hover{
+	animation: pulsing 2s infinite;
 }
 #header .logo img{
 	height: 100%;
@@ -169,6 +179,49 @@ a{
 	min-height: 100vh;
 	background-color: #333;
 }
+#block2{
+	background-image: linear-gradient(to top, #871313, #000);
+	padding: 50px;
+	text-align: center;
+}
+#block2 .card{
+	display: inline-block;
+	vertical-align: top;
+	width: 250px;
+	height: 400px;
+	margin: 25px;
+	background-color: orange;
+	transition: 200ms;
+}
+#block2 .card:hover{
+	transform: translateY(-20px);
+	box-shadow: 0px 20px 40px #000;
+}
+#block2 .card .text{
+	color: #fff;
+}
+#block2 .card .text .big{
+	padding: 10px;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+#block2 .card .text .small{
+	padding: 10px;
+	font-size: 16px;
+}
+#block2 .card .img{
+	height: 200px;
+	background-size: cover;
+}
+#block2 a:nth-child(1) .card .img{
+	background-image: url(img/img1.jpg);
+} 
+#block2 a:nth-child(2) .card .img{
+	background-image: url(img/Img2.jpg);
+} 
+#block2 a:nth-child(3) .card .img{
+	background-image: url(img/Img3.png);
+} 
 #footer{
 	background-color: #111;
 	padding: 50px;
@@ -185,4 +238,95 @@ a{
 }
 #footer span a:hover{
 	text-decoration-line: underline;
+}
+@keyframes pulsing{
+	0%	{transform: scale(1);}
+	15%	{transform: scale(1.05);}
+	25%	{transform: scale(1);}
+	40%	{transform: scale(1.05);}
+	50%	{transform: scale(1);}
+}
+@keyframes wiggling{
+	0%	{transform: translateX(-0%);}
+	15%	{transform: translateX(-15%);}
+	25%	{transform: translateX(-0%);}
+	40%	{transform: translateX(-15%);}
+	50%	{transform: translateX(-0%);}
+	
+}
+@media(max-width: 1000px){
+	#header{
+		height: 200px;
+	}
+	#header .logo{
+		display: block;
+	}
+}
+@media(max-width: 800px){
+	#header{
+		height: 100px;
+	}
+	#header .logo{
+		display: inline-block;
+	}
+	#header .special-btn{
+
+	}
+	#header .special-btn-body{
+		position: relative;
+		display: inline-block;
+		vertical-align: top;
+		width: 60px;
+		height: 60px;
+		margin: 20px;
+	}
+	#header .special-btn-menu{
+		position: absolute;
+		left: 0;
+		top: 100%;
+		transform: translateY(-50%) scaleY(0);
+		transition-duration: 200ms;
+		background-color: rgba(0, 0, 0, 0.8);
+		text-align: left;
+	}
+	#header:hover .special-btn-menu{
+		transform: translateY(0) scaleY(1);
+	}
+	#header .line{
+		position: absolute;
+		left: 0;
+		height: 6px;
+		width: 100%;
+		background-color: #def;
+		border-radius: 3px;
+		transition-duration: 200ms; 
+	}
+	#header .top{
+		top: 0%;
+		transform: translateY(-0%);
+	}
+	#header .middle{
+		top: 50%;
+		transform: translateY(-50%);
+	}
+	#header .bottom{
+		top: 100%;
+		transform: translateY(-100%);
+	}
+
+	#header .special-btn:hover .top{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(45deg);
+		width: 141%;
+	}
+	#header .special-btn:hover .middle{
+		transform: translateY(-50%) scaleX(0);
+	}
+	#header .special-btn:hover .bottom{
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%) rotate(-45deg);
+		width: 141%;
+	}
 }
