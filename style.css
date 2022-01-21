@@ -222,6 +222,14 @@ a{
 #block2 a:nth-child(3) .card .img{
 	background-image: url(img/Img3.png);
 } 
+#block2{
+	background-image: linear-gradient(to top, #871313, #000);
+}
+#block3 iframe{
+	width: 100%;
+	height: calc(100vw / 21 * 9);
+	min-height: 230px;
+}
 #footer{
 	background-color: #111;
 	padding: 50px;
@@ -255,20 +263,6 @@ a{
 	
 }
 @media(max-width: 1000px){
-	#header{
-		height: 200px;
-	}
-	#header .logo{
-		display: block;
-	}
-}
-@media(max-width: 800px){
-	#header{
-		height: 100px;
-	}
-	#header .logo{
-		display: inline-block;
-	}
 	#header .special-btn{
 
 	}
@@ -284,6 +278,7 @@ a{
 		position: absolute;
 		left: 0;
 		top: 100%;
+		width: 80%;
 		transform: translateY(-50%) scaleY(0);
 		transition-duration: 200ms;
 		background-color: rgba(0, 0, 0, 0.8);
@@ -328,5 +323,20 @@ a{
 		left: 50%;
 		transform: translate(-50%, -50%) rotate(-45deg);
 		width: 141%;
+	}
+	#header .btn:hover{
+		height: auto;
+		min-height: 30px;
+	}
+	#header .btn .menu{
+		position: relative;
+		transition-duration: 0s;
+		transition-delay: 0s;
+	}
+	#header .logo{
+		height: 70px;
+	}
+	#header .logo:hover{
+		height: 70px;
 	}
 }
