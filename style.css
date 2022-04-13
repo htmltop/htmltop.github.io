@@ -169,6 +169,48 @@ a{
 #block1 .video{
 	width: 100%;
 }
+#block1 .title{
+	position: absolute;
+	left: 80%;
+	top: 80%;
+	transform: translate(-80%, -80%);
+	width: 300px;
+	text-align: center;
+}
+#block1 img{
+	width: 100%;
+}
+#block1 .text{
+	font-family: GTA Ukrainian;
+	color: #fff;
+	text-shadow: 0 0 4px #000;
+	text-align: justify;
+	font-size: 40px;
+}
+#block1 .btn-spec{
+	display: inline-block;
+	margin: 40px;
+	padding: 20px;
+	padding-left: 60px;
+	padding-right: 60px;
+	border-radius: 5px;
+	background-color: #fff;
+	text-align: center;
+	font-family: GTA Ukrainian;
+	color: #333;
+	font-size: 40px;
+	transition-duration: 200ms;
+	animation: pulsing 2s infinite;
+}
+#block1 .btn-spec:hover{
+	margin: 35px;
+	padding: 25px;
+	padding-left: 65px;
+	padding-right: 65px;
+}
+#block1 .title .btn{
+	
+}
 .block{
 
 }
@@ -225,10 +267,69 @@ a{
 #block2{
 	background-image: linear-gradient(to top, #871313, #000);
 }
-#block3 iframe{
+#block3{
+
+}
+#block4 iframe{
 	width: 100%;
 	height: calc(100vw / 21 * 9);
 	min-height: 230px;
+}
+#right-menu{
+	position: fixed;
+	right: 0px;
+	top: 100px;
+	font-family: GTA Ukranian;
+}
+#right-menu .btn{
+	position: relative;
+	width: 75px;
+	height: 75px;
+}
+#right-menu .btn-caption{
+	position: absolute;
+	transform: translateX(50%); scale(0);
+	transition-duration: 1000ms;
+	text-align: right;
+	opacity: 0;
+	text-transform: uppercase;
+}
+#right-menu:hover .btn-caption{
+	transform: translateX(0); scale(1);
+	right: 115px;
+	font-size: 450%;
+	transition-duration: 500ms;
+	color: white;
+	opacity: 1;
+}
+#right-menu .romb-out{
+	position: absolute;
+	left: calc(50% - 20px - 4px);
+	top: calc(50% - 20px - 4px);
+	width: 40px;
+	height: 40px;
+	transform: rotate(45deg);
+	border: solid 4px white;
+	background-color: rgba(0, 0, 0, 0.7);
+}
+#right-menu .romb-in{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 30px;
+	height: 30px;
+	transition-duration: 1000ms;
+}
+#right-menu .btn:hover .romb-in{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%, -50%);
+	width: 30px;
+	height: 30px;
+	background-color: white;
+	transition-duration: 500ms;
 }
 #footer{
 	background-color: #111;
