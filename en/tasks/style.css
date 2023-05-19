@@ -1,0 +1,513 @@
+@font-face{
+	font-family: font1;
+	src: url("../../fonts/genshin.ttf");
+}
+body{
+	font-family: font1;
+	margin: 0;
+}
+a{
+	text-decoration-line: none;
+	color: white;
+}
+#header{
+	position: sticky;
+	text-align: center;
+	top: 0;
+	left: 0;
+	right: 0;
+	height: 100px;
+	background-color: rgba(87, 108, 188, 1.0);
+	color: white;
+	z-index: 1000;
+}
+#header .logo{
+	vertical-align: middle;
+	padding: 10px;
+	height: 80px;
+	width: 80px;
+	border-radius: 50px;
+	display: inline-block;
+}
+#header .logo img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50px;
+}
+#header .name{
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 50px;
+	padding-right: 50px;
+	font-size: 30px;
+}
+#header .title{
+	vertical-align: middle;
+	display: inline-block;
+	font-size: 30px;
+}
+#header .title .img{
+	vertical-align: middle;
+	display: inline-block;
+	height: 80px;
+	width: 80px;
+}
+#header .title .img img{
+	height: 100%;
+	width: 100%;
+}
+#header .menu{
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 100px;
+	height: 100px;
+	width: 100px;
+	display: inline-block;
+}
+#header .menu .mini-menu{
+	position: absolute;
+	display: block;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 0;
+	left: 50%;
+	opacity: 0;
+	vertical-align: middle;
+	transition-duration: 500ms;
+}
+#header .menu img{
+	position: absolute;
+	display: inline-block;
+	vertical-align: middle;
+	left: 0;
+	padding: 10px;
+	height: 80px;
+	width: 80px;
+	transition-duration: 500ms;
+}
+#header .menu:hover{
+	display: inline-block;
+	vertical-align: middle;
+	padding-left: 20px;
+	height: 100px;
+	width: 200px;
+	display: inline-block;
+	transition-duration: 500ms;
+}
+#header .menu:hover .mini-menu{
+	display: inline-block;
+	vertical-align: middle;
+	left: 0;
+	right: 100%;
+	font-size: 22px;
+	padding: 0;
+	height: 60px;
+	width: 300px;
+	top: 50px;
+	opacity: 100%;
+	transform: translateY(-50%);
+	background-color: rgba(25, 55, 109, 0.5);
+	border-radius: 10px;
+	transition-duration: 500ms;
+}
+#header .menu .mini-menu .button1{
+	width: 300px;
+	transition-duration: 200ms;
+}
+#header .menu .mini-menu .button1:hover{
+	width: 300px;
+	background-color: rgba(87, 108, 188, 0.5);
+	border-radius: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	transition-duration: 200ms;
+}
+#header .menu .mini-menu .button1 img{
+	display: inline-block;
+	left: 20%;
+	height: 30px;
+	width: 30px;
+}
+#header .menu:hover .mini-menu .button1 img{
+	display: inline-block;
+	left: 20%;
+	padding: 0;
+	transform: rotate(0);
+	transition-duration: 500ms;
+}
+#header .menu .mini-menu .button2{
+	width: 300px;
+	transition-duration: 200ms;
+}
+#header .menu .mini-menu .button2:hover{
+	width: 300px;
+	background-color: rgba(87, 108, 188, 0.5);
+	border-radius: 10px;
+	padding-top: 2px;
+	padding-bottom: 2px;
+	transition-duration: 200ms;
+}
+#header .menu .mini-menu .button2 img{
+	display: inline-block;
+	left: 10%;
+	height: 30px;
+	width: 30px;
+}
+#header .menu:hover .mini-menu .button2 img{
+	display: inline-block;
+	left: 10%;
+	padding: 0;
+	transform: rotate(0);
+	transition-duration: 500ms;
+}
+#header .menu:hover img{
+	display: inline-block;
+	vertical-align: middle;
+	left: 130%;
+	padding: 15px;
+	height: 70px;
+	width: 70px;
+	transform: rotate(-90deg);
+	transition-duration: 500ms;
+}
+#content{
+	
+}
+#content .line{
+	position: relative;
+	width: 1100px;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	left: 50%;
+	transform: translateX(-50%);
+	border-radius: 50px;
+	background-color: rgba(165, 215, 232, 1.0);
+	text-align: center;
+}
+#content .line .warning{
+	height: 125px;
+	padding: 10px;
+}
+#content .line .warning .img{
+	height: 100px;	
+}
+#content .line .warning .img img{
+	height: 100%;	
+}
+#content .line .warning .text{
+	font-size: 20px;
+}
+#content .line .tasks{
+
+}
+#content .line .tasks .task{
+	display: none;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 700px;
+	padding: 0;
+}
+#content .line .tasks .task.active{
+	display: block;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 700px;
+	padding: 0;
+}
+#content .line .tasks .task .part1{
+
+}
+#content .line .tasks .task .part1 .plus{
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	background-color: rgba(120, 120, 120, 1.0);
+	border-top-left-radius: 40px;
+	margin: 0;
+	transition-duration: 200ms;
+	cursor: pointer;
+}
+#content .line .tasks .task .part1 .plus:hover{
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	background-color: rgba(200, 200, 200, 1.0);
+	border-radius: 40px;
+	margin: 0;
+	transition-duration: 200ms;
+}
+#content .line .tasks .task .part1 .plus img{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+#content .line .tasks .task .part1 .tittle{
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 500px;
+	background-color: rgba(200, 200, 200, 1.0);
+	padding: 0;
+	margin: 0;
+	border-top-right-radius: 40px;
+}
+#content .line .tasks .task .part1 .tittle .text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	font-size: 20px;
+}
+#content .line .tasks .task .part2{
+
+}
+#content .line .tasks .task .part2 .goal{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 605px;
+	text-align: center;
+	background-color: rgba(25, 55, 109, 1.0);
+	border-bottom-left-radius: 40px;
+	border-bottom-right-radius: 40px;
+	padding-top: 20px;
+	padding-bottom: 20px;
+}
+#content .line .tasks .task .part2 .goal .title{
+	margin-bottom: 10px;
+	color: white;
+	transition-duration: 200ms;
+}
+#content .line .tasks .task .part2 .goal .title:hover{
+	margin-bottom: 10px;
+	color: black;
+	background-color: rgba(200, 200, 200, 1.0);
+	border-radius: 10px;
+	transition-duration: 200ms;
+	cursor: pointer;
+}
+#content .line .tasks .task .part2 .goal .text{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	width: 500px;
+	height: 300px;
+	border: dashed 3px white;
+	border-radius: 10px;
+	font-size: 15px;
+	color: white;
+	overflow: hidden;
+}
+#content .line .tasks .task1{
+
+}
+#content .line .tasks .task1.active{
+
+}
+#content .line .new-task{
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 100px;
+	width: 600px;
+	cursor: pointer;
+	margin-top: 20px;
+}
+#content .line .new-task .img{
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	background-color: rgba(120, 120, 120, 1.0);
+	border-top-left-radius: 40px;
+	border-bottom-left-radius: 40px;
+}
+#content .line .new-task .img img{
+	height: 100%;
+	width: 100%;
+	padding: 0;
+}
+#content .line .new-task .block{
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 400px;
+	background-color: rgba(200, 200, 200, 1.0);
+	padding: 0;
+	border-top-right-radius: 40px;
+	border-bottom-right-radius: 40px;
+}
+#content .line .new-task .block .text{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	font-size: 20px;
+}
+#content .all-roles{
+	display: none;
+	text-align: center;
+}
+#content .all-roles.active{
+	display: block;
+	text-align: center;
+	width: 700px;
+}
+#content .all-roles .img{
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
+	transition-duration: 200ms;
+}
+#content .all-roles .img:hover{
+	position: relative;
+	display: inline-block;
+	height: 100px;
+	width: 100px;
+	cursor: pointer;
+	background-color: rgba(200, 200, 200, 0.5);
+	border-radius: 50px;
+	transition-duration: 200ms;
+}
+#footer1{
+	background-color: rgba(25, 55, 109, 1.0);
+	text-align: center;
+}
+#footer1 .block1{
+	position: relative;
+	padding-top: 15px;
+	height: 120px;
+	width: 820px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#footer1 .block1 .bttn1 {
+	position: absolute;
+	text-align: center;
+	display: inline-block;
+	left: 0;
+	height: 100px;
+	width: 400px;
+	color: white;
+}
+#footer1 .block1 .bttn1 .img{
+	display: inline-block;
+	height: 100px;
+	vertical-align: middle;
+}
+#footer1 .block1 .bttn1 .img img{
+	height: 100%;
+}
+#footer1 .block1 .bttn1 .text{
+	display: inline-block;
+	vertical-align: middle;
+}
+#footer1 .block1 .bttn2{
+	position: absolute;
+	display: inline-block;
+	right: 0;
+	height: 22px;
+	width: 140px;
+	padding-left: 130px;
+	padding-right: 130px;
+	padding-top: 39px;
+	padding-bottom: 39px;
+	color: white;
+	font-size: 15px;
+}
+#footer1 .block1 .bttn2 a{
+	color: white;
+}
+#footer1 .block2{
+	position: relative;
+	height: 120px;
+	width: 820px;
+	padding-bottom: 15px;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#footer1 .block2 .bttn3{
+	height: 100px;
+	width: 800px;
+}
+#footer1 .block2 .bttn3 .text{
+	color: white;
+	transform: translateY(70%);
+	font-size: 30px;
+}
+#footer2{
+	color: white;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	height: 200px;
+	background-color: rgba(11, 36, 71, 1.0);
+	font-size: 17px;
+}
+#footer2 .block1{
+	position: relative;
+	height: 100px;
+}
+#footer2 .block1 .language{
+	position: absolute;
+	display: inline-block;
+	height: 50px;
+	padding: 25px;
+	top: 50%;
+	left: 0;
+	transform: translateY(-40%);
+	cursor: pointer;
+}
+#footer2 .block1 .text{
+	position: absolute;
+	display: inline-block;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+}
+#footer2 .block1 .media{
+	position: absolute;
+	display: inline-block;
+	height: 30px;
+	padding: 37px;
+	top: 50%;
+	right: 0;
+	height: 25px;
+	transform: translateY(-50%);
+}
+#footer2 .block1 .media .img{
+	display: inline-block;
+	height: 30px;
+}
+#footer2 .block1 .media .img img{
+	height: 100%;
+}
+#footer2 .block2{
+	position: relative;
+	height: 100px;
+}
+#footer2 .block2 .all-btn{
+	position: absolute;
+	text-align: center;
+	left: 50%;
+	bottom: 50%;
+	transform: translateX(-50%) translateY(50%);
+}
+#footer2 .block2 .all-btn .btn{
+	display: inline-block;
+	transition-duration: 200ms;
+}
+#footer2 .block2 .all-btn .btn:hover{
+	display: inline-block;
+	padding: 5px;
+	background-color: rgba(25, 55, 109, 1.0);
+	border-radius: 5px;
+	transition-duration: 200ms;
+}
