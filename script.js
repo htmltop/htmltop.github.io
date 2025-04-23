@@ -1,1 +1,0 @@
-window.location.replace("ua/index.html")

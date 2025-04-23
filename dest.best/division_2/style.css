@@ -1,0 +1,168 @@
+@font-face{
+	font-family: font1;
+	src: url("fonts/GTA Ukrainian.ttf");
+}
+body{
+	font-family: font1;
+	margin: 0;
+}
+a{
+	color: #aaa;
+	text-decoration-line: none;
+}
+a:hover{
+	text-decoration-line: underline;
+}
+#fullscreen{
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	/*background-color: rgba(0, 0, 0, 0.7);*/
+	z-index: 1;
+	pointer-events: none;
+}
+#header{
+	position: sticky;
+	top: 0;
+	height: 50px;
+	background-color: #222;
+	text-align: right;
+	z-index: 1000;
+}
+#header .btn{
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+#header .logo{
+	display: inline-block;
+	vertical-align: top;
+	height: 50px;
+	padding-right: 10px;
+	padding-left: 10px;
+}
+#header .logo .logo-img{
+	height: 50px;
+}
+#content{
+	min-height: calc(100vh - 150px);
+	background-color: #111;
+}
+#block1 iframe{
+	width: 100%;
+	height: calc((100vw - 20px) / 16 * 9);
+}
+#gallery{
+	position: relative;
+	text-align: center;
+	padding-bottom: 50px;
+	max-width: 1920px;
+	margin: auto;
+}
+/*#gallery .btn-more{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translateX(-50%);
+}*/
+#gallery .div-more{
+	position: absolute;
+	left: 50%;
+	bottom: 40px;
+	transform: translateX(-50%);
+	padding: 10px;
+	background-color: #228;
+	border-radius: 5px;
+}
+#gallery .div-more:hover{
+	background-color: #339;
+}
+#gallery .div-more span{
+	pointer-events: none;
+}
+#gallery .gallery-img{
+	display: inline-block;
+	vertical-align: top;
+	height: 250px;
+	width: 250px;
+	margin: 50px;	
+	border-radius: 10px;
+	background-color: #555;
+	background-size: contain;
+	background-position: 50% 50%;
+	background-repeat: no-repeat;
+}
+#text-block{
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+}
+#footer{
+	padding: 50px;
+	background-color: #222;
+	text-align: center;
+}
+#footer span{
+	color: #aaa;
+	margin: 10px;
+}
+#footer a:hover{
+	text-decoration-line: underline;
+}
+#sidebar{
+	position: fixed;
+	right: 25px;
+	bottom: 25px;
+	width: 360px;
+	padding: 10px;
+	border-radius: 20px;
+	background-color: rgba(255, 255, 255, 0.3);
+	backdrop-filter: blur(20px);
+}
+#sidebar .name{
+	position: relative;
+	text-transform: uppercase;
+	padding: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.3);
+	font-size: 30px;
+	line-height: 30px;
+	text-align: center;
+}
+#sidebar .feed{
+	position: relative;
+	padding: 10px;
+	border-radius: 10px;
+	background-color: rgba(255, 255, 255, 0.3);
+	min-height: 60px;
+}
+#sidebar .toggle{
+	position: absolute;
+	right: calc(100% + 10px);
+	bottom: 0;
+}
+#sidebar .toggle .arr{
+	height: 40px;
+	width: 40px;
+	background-color: rgba(255, 255, 255, 0.5);
+	background-image: url("img/arr.png");
+	background-size: cover;
+	border-radius: 50%;
+}
+@media(max-width: 1600px){
+	#header{
+		position: fixed;
+		top: 20px;
+		right: 0;
+		padding: 10px;
+		padding-left: 30px;
+		clip-path: polygon(0% 0%, 100% 0%, 100% 100%, 20px 100%);
+		backdrop-filter: blur(10px);	
+		background-color: rgba(34, 34, 34, 0.5);
+	}
+}

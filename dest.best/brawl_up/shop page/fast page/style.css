@@ -1,0 +1,151 @@
+body{
+	margin: 0;
+}
+a{
+	text-decoration-line: none;
+}
+#header{
+	height: 100px;
+	top: 0;
+	left: 0;
+	right: 0;
+	text-align: center;
+	background-color: rgba(252, 218, 0, 1.0);
+}
+#header .header-blocks{
+	display: inline-block;
+	font-size: 40px;
+	height: 70px;
+}
+#header .logo{
+	padding: 20px;
+}
+#header .logo img{
+	height: 100%;
+}
+#header .text{
+	font-size: 30px;
+	color: black;
+	vertical-align: bottom;
+}
+#header .settings{
+	font-size: 20px;
+}
+#header .settings .settings-body{
+	height: 70px;
+	width: 70px;
+}
+#header .settings .settings-body .circle-outside{
+	height: 70px;
+	width: 70px;
+	background-color: black;
+	border-radius: 35px;
+}
+#header .settings .settings-body .circle-outside .circle-inside{
+	left: 50%;
+	top: 50%;
+	transform: translateX(50%) translateY(50%);
+	height: 35px;
+	width: 35px;
+	background-color: rgba(255, 217, 28, 1.0);
+	border-radius: 35px;
+}
+#header .settings .settings-menu{
+	position: absolute;
+	padding: 10px;
+	text-align: center;
+	background-color: rgba(22, 18, 252, 0.8);
+	transform: translateY(-50%) scaleY(0);
+	transition-duration: 2s;
+	transition-delay: 100ms;     	
+	transition-timing-function: cubic-bezier(5, 0.1, 10, 2);
+	border-radius: 20px;
+	z-index: 1000;
+}
+#header .settings:hover .settings-menu{
+	transform: translateY(0) scaleY(1);
+}
+#header .settings .settings-menu .menu-btn{
+	color: rgba(255, 217, 28, 1.0);
+	font-size: 30px;
+}
+#header .settings .settings-menu .menu-btn:hover{
+	color: rgba(255, 217, 28, 1.0);
+	text-shadow: rgba(255, 217, 28, 0.5);
+}
+#arr{
+padding: 10px;
+}
+#arr .img{
+	position: absolute;
+	height: 50px;
+	width: 50px;
+	transform: rotate(180deg);
+}	
+#arr .img img{
+	height: 100%;
+	width: 100%;
+}
+#img{
+	height: 500px;
+	padding: 10px;
+}
+#img .part{
+	height: 500px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+#img .part img{
+	height: 100%;
+}
+#footer{
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	color: white;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: black;
+}
+#footer a{
+	color: rgba(219, 219, 219, 1.0);
+}
+#footer a:hover{
+	color: white;
+	text-decoration-line: underline;
+}
+#footer .text{
+	display: inline-block;
+}
+#footer .text .main-fraze{
+	font-size: 25px;
+	text-align: center;
+}
+#footer .text .footer-blocks{
+	display: inline-block;
+	vertical-align: middle;
+	margin-left: 20px;
+	margin-right: 20px;
+}
+#footer .text .vertions{
+}
+#footer .text .description{
+
+}
+#footer .text .contacts{
+	
+}
+#footer .text .contacts .yt{
+	
+}
+#footer .text .contacts .tg{
+	
+}
+#footer .contacts .dsc{
+	
+}
+#footer .contacts .email{
+	
+}

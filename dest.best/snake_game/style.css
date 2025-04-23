@@ -1,0 +1,43 @@
+body{
+	margin: 0;
+	background-color: #afa;
+}
+#header{
+	text-align: center;
+	height: 100px;
+	background-color: #8f8;
+}
+#header .logo{
+	display: inline-block;
+	vertical-align: middle;
+	padding-right: 100px;
+	height: 100px;
+	width: 100px;
+	border-radius: 50px;
+}
+
+#header .logo img{
+	height: 100%;
+	width: 100%;
+	border-radius: 50px;
+}
+#header .text{
+	display: inline-block;
+	vertical-align: middle;
+	font-size: 50px;
+}
+#interface{
+	text-align: center;
+	width: 510px;
+	height: 550px;
+	margin: auto;
+	background-color: #8f8;
+}
+#canvas{
+/*	border: solid 10px #D88;*/
+}
+#start-btn{
+	height: 34px;
+	font-size: 28px;
+	line-height: 28px;
+}

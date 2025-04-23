@@ -1,0 +1,176 @@
+@font-face{
+	font-family: Comfortaa;
+	src: url("fonts/Comfortaa-VariableFont_wght.ttf");
+}
+@font-face{
+	font-family: Minecraft;
+	src: url("fonts/Molot.otf");
+}
+body{
+	margin: 0;
+	font-size: 0;
+	background-color: #111;
+	font-family: Minecraft;
+}
+#header{
+	position: fixed;
+	left: 10px;
+	top: 10px;
+	right: 10px;
+	min-height: 70px;
+	background-color: rgba(34, 34, 34, 0.3);
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	border-radius: 10px;
+	box-shadow: 0 0 10px #000;
+	transition-duration: 200ms;
+	z-index: 1000;
+}
+#header.active{
+	-webkit-backdrop-filter: blur(2px);
+	backdrop-filter: blur(2px);
+}
+#header a{
+	text-decoration-line: none;
+}
+#header .logo{
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	background-color: rgba(34, 34, 34, 0.7);
+	border-bottom-left-radius: 10px;
+	border-top-left-radius: 10px;
+}
+#header .logo .logo-img{
+	height: 50px;
+}
+#header .btns-left{
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+}
+#header .btns-right{
+	position: absolute;
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	right: 0;
+	top: 0;
+}
+#header .btn{
+	display: inline-block;
+	vertical-align: top;
+	position: relative;
+	padding: 10px;
+	height: 30px;
+	font-size: 30px;
+	line-height: 30px;
+	color: #FFF;
+	border-radius: 10px;
+	transition-duration: 200ms;
+}
+#header .btn:hover{
+	background-color: rgba(34, 34, 34, 0.5);
+}
+#content{
+	min-height: 100vh;
+}
+#content .block{
+
+}
+#block1{
+
+}
+#block1 img.bg{
+	width: 100%;
+}
+#block2{
+	text-align: center;
+	background-color: #333;
+}
+#block2 .block-name{
+	font-size: 32px;
+	font-weight: bold;
+	padding: 32px;
+	color: #FFF;
+}
+#block2 .cards{
+	position: relative;
+	padding: 10px;
+}
+#block2 .cards .card{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	margin: 5px;
+	padding: 5px;
+	height: 400px;
+	width: 400px;
+	color: #AAA;
+	border-radius: 15px;
+	transition-duration: 200ms;
+}
+#block2 .cards .card:hover{
+	background-color: #000;
+	box-shadow: 0 0 10px #000;
+}
+#block2 .cards .card .card-img{
+	width: 400px;
+	height: 190px;
+	background-size: cover;
+	background-position: 50% 50%;
+	border-radius: 10px;
+	transition-duration: 200ms;
+}
+#block2 .cards .card:hover .card-img{
+	box-shadow: 0 0 5px #FA0;
+}
+#block2 .cards .card .text{
+	padding: 10px;
+	color: #aaa;
+}
+#block2 .cards .card .text .main{
+	padding: 10px;
+	font-size: 24px;
+}
+#block2 .cards .card .text .descr{
+	padding: 10px;
+	font-size: 16px;
+}
+#block2 .cards .card .author{
+
+}
+#block2 .cards .card .author .avatar{
+
+}
+#block2 .cards .card .author .data{
+
+}
+#block2 .cards .card .author .data .name{
+
+}
+#block2 .cards .card .author .data .rank{
+
+}
+#block2 .cards .card .author .data .date{
+
+}
+#footer{
+	padding: 30px;
+	text-align: center;
+	background-color: #222;
+}
+#footer .span{
+	display: inline-block;
+	vertical-align: top;
+	text-align: right;
+	margin: 16px;
+	font-size: 16px;
+	color: #AAA;
+}
+#footer .span a{
+	color: #AAA;
+}
+#footer .span a:hover{
+	color: #FFF;
+}

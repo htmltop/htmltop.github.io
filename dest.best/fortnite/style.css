@@ -1,0 +1,266 @@
+body{
+	margin: 0;
+	font-size: 0;
+	background-image: url(img/Fon.jpg);
+}
+#header{
+	position: sticky;
+	top: 0;
+	width: 100%;
+	height: 50px;
+	background-color: rgba(34, 34, 34, 0.9);
+	text-align: center;
+	z-index: 1;
+}
+#header .btn{
+	position: relative;
+	display: inline-block;
+	vertical-align: top;
+	padding: 5px;
+	height: 40px;
+	background-color: rgba(34, 34, 34, 0.9);
+}
+#header .btn-img{
+	display: inline-block;
+	vertical-align: top;
+	height: 40px;
+	width: 40px;
+	background-size: cover;
+}
+#btn1 .btn-img{
+	background-image: url("img/fortnite-1.jpg");
+	background-position: 50% 50%;
+}
+#btn1:hover .btn-img{
+	background-image: url("img/fortnite.gif");
+}
+#btn2 .btn-img{
+	background-image: url("img/fortnite-floss-1.jpg");
+	background-position: 50% 50%;
+}
+#btn2:hover .btn-img{
+	background-image: url("img/fortnite-floss.gif");
+}
+#header .btn-text{
+	display: inline-block;
+	vertical-align: top;
+	height: 20px;
+	padding: 10px;
+	line-height: 20px;
+	font-size: 20px;
+	color: #fff;
+	text-transform: uppercase;
+}
+#header .btn .menu{
+	position: absolute;
+	left: 0;
+	top: 100%;
+	width: 510px;
+	background-color: rgba(34, 34, 34, 0.9);
+	overflow-y: hidden;
+	transition-duration: 200ms;
+	transform: translateY(-50%) scale(0);
+}
+#header .btn:hover .menu{
+	transform: translateY(0) scale(1);
+}
+#header .menu-btn{
+	display: inline-block;
+	vertical-align: top;
+	padding: 10px;
+	/*padding-bottom: 40px;*/
+}
+#header .menu-btn-img{
+	width: 150px;
+}
+#header .menu-btn .text{
+	font-size: 16px;
+	color: #fff;
+}
+#content{
+	width: 600px;
+	min-height: 1000px;
+	background-color: #ccc;
+	margin: auto;
+}
+#content .block{
+	position: relative;
+	width: 100%;
+}
+#content .block-img{
+	position: relative;
+	width: 100%;
+}
+#content .block-box{
+	position: absolute;
+	max-width: 400px;
+	left: 20px;
+	bottom: 20px;
+	text-align: left;
+}
+#content .block-box{
+	position: absolute;
+	max-width: 400px;
+	left: 20px;
+	bottom: 20px;
+	text-align: left;
+}
+#content .block-box p{
+	margin: 5px;
+	color: #fff;
+	text-shadow: 0 0 5px #000;
+}
+#content .block-box .big-text{
+	font-size: 24px;
+	text-transform: uppercase; /* сделать капсом */
+}
+#content .block-box .small-text{
+	font-size: 16px;
+}
+#content .block-box a{
+	text-decoration-line: none;
+}
+#content .block-box .btn{
+	display: inline-block;
+	padding: 5px;
+	padding-right: 10px;
+	padding-left: 10px;
+	border: outset 3px rgba(204, 147, 10);
+	border-radius: 5px;
+	background-color: rgba(204, 147, 24);
+	color: #fff;
+	font-size: 18px;
+}
+#block3{
+	
+}
+#block3 .element{
+	padding: 10px;
+}
+#block3 .img{
+	width: calc(50% - 20px);
+	vertical-align: middle;
+	padding: 10px;
+}
+#block3 .description{
+	display: inline-block;
+	vertical-align: middle;
+	width: calc(50% - 20px);
+	padding: 10px;
+}
+#block3 .description .big{
+	margin: 0;
+	font-size: 18px;
+	text-transform: uppercase;
+}
+#block3 .description .small{
+	font-size: 15px;
+}
+#block3 .description a{
+	text-decoration-line: none;
+}
+#block3 .description .btn{
+	font-size: 16px;
+	text-transform: uppercase;
+	color: #d1a11b;
+}
+#block3 .description .btn:hover{
+	color: #ffa600;
+	text-decoration-line: underline;
+}
+#footer{
+	padding: 15px;
+	background-color: #222;
+	text-align: center;
+}
+#footer span{
+	margin: 20px;
+	font-size: 16px;
+	color: #aaa;
+}
+#footer a{
+	text-decoration-line: none;
+	color: #aaa;
+}
+#footer a:hover{
+	text-decoration-line: underline;
+}
+#block2{
+
+}
+#block2 .e-a{
+
+}
+#block2 .el{
+	position: relative;
+	height: 140px;
+	width: 140px;
+	margin: 5px;
+	background-color: #f00;
+	display: inline-block;
+	vertical-align: top;
+}
+#block2 .e-img{
+	height: 100%;
+	width: 100%;
+	background-size: cover;
+	background-position: 50% 50%;
+}
+#el1 .e-img{
+	background-image: url(img/Fortnite14.jpg);
+}
+#el2 .e-img{
+	background-image: url(img/Fortnite14.jpg);
+}
+#el3 .e-img{
+	background-image: url(img/Fortnite14.jpg);
+}
+#el4 .e-img{
+	background-image: url(img/Fortnite14.jpg);
+}
+#el5 .e-img{
+	background-image: url(img/Fortnite15.jpg);
+}
+#el6 .e-img{
+	background-image: url(img/Fortnite16.jpg);
+}
+#el7 .e-img{
+	background-image: url(img/Fortnite17.jpg);
+}
+#el8 .e-img{
+	background-image: url(img/Fortnite18.jpg);
+}
+#block2 .e-descr{
+	bottom: 0;
+	left: 0;
+	right: 0;
+	padding: 5px;
+	padding-top: 10px;
+	position: absolute;
+	background-color: rgba(0, 0, 0, 0.5);
+	text-align: center;
+}
+#block2 .d-type{
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+	top: -8px;
+	color: white;
+	font-size: 15px;
+	text-transform: uppercase;
+	background-color: rgba(0, 0, 0, 0.5);
+}
+#block2 .d-name{
+	font-size: 19px;
+	color: #eee;
+	text-transform: uppercase;
+}
+#block2 .d-text{
+	font-size: 0px;
+	color: #eee;
+	transition-duration: 200ms;
+}
+#block2 .el:hover .e-descr .d-text{
+	font-size: 13px;
+
+}
